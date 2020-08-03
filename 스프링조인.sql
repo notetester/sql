@@ -1,0 +1,17 @@
+SELECT USERID,
+       USERPW,
+       USERNAME,
+       USERPHONE1,
+       USERPHONE2,
+       USEREMAIL1,
+       USEREMAIL2,
+       ADDRZIPNUM,
+       ADDRBASIC,
+       ADDRDETAIL,
+       F.BNO,
+       F.TITLE,
+       F.REGDATE
+       FROM USERS U
+LEFT OUTER JOIN FREEBOARD F
+ON U.USERID=F.WRITER
+where userid = 'aaaa';
